@@ -1,0 +1,46 @@
+{
+  "name": "weedle-monorepos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "example2",
+      "example"
+    ],
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/@react-native-async-storage/async-storage",
+      "**/@react-native-async-storage/async-storage/**",
+      "**/@walletconnect/react-native-dapp",
+      "**/@walletconnect/react-native-dapp/**",
+      "**/@ethersproject/shims",
+      "**/@ethersproject/shims/**",
+      "**/@walletconnect/web3-provider",
+      "**/@walletconnect/web3-provider/**",
+      "**/react-native-qrcode-svg",
+      "**/react-native-qrcode-svg/**",
+      "**/react-native-randombytes",
+      "**/react-native-randombytes/**",
+      "**/react-native-svg",
+      "**/react-native-svg/**",
+      "**/node-libs-react-native",
+      "**/node-libs-react-native/**"
+    ]
+  },
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock && yarn",
+    "android": "yarn workspace @weedle/example android",
+    "build": "yarn workspace @weedle/$npm_config_project prepare"
+  },
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  }
+}

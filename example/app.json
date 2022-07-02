@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "exa",
+    "slug": "exa",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "org.name.example"
+    }
+  }
+}
