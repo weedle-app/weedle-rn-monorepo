@@ -6,13 +6,16 @@ import WeedleAuthProvider, { AuthServiceProviderProps } from '@weedle/auth';
 import HandleWalletConnect from './components/AuthDemo';
 
 const rpc = {
-  url: 'https://2ae6-50-66-132-160.ngrok.io',
+  url: 'https://f67f-50-66-132-160.ngrok.io/',
   chainId: 1337,
 };
 
-const client = new WeedleApp({
-  rpc,
-});
+const client = new WeedleApp(
+  {
+    rpc,
+  },
+  { handleErrors: true }
+);
 
 const authProps: AuthServiceProviderProps = {
   adapter: 'walletconnect',

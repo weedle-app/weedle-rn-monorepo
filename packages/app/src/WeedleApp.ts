@@ -1,10 +1,17 @@
-import type { InitOptions } from './types';
+import type { AppOptions, InitOptions } from './types';
+import GlobalErrorHandler from './errors/global-error-handler';
 
 export default class WeedleApp {
   isInitialized = false;
-  constructor(private readonly _config: InitOptions) {
+  constructor(private readonly _config: InitOptions, options?: AppOptions) {
     if (this.validateAppConfig(_config)) {
       this.isInitialized = true;
+    }
+
+    if (options) {
+      if (options.handleErrors != null && options.handleErrors !== false) {
+        GlobalErrorHandler();
+      }
     }
   }
 
