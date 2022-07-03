@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-ignore
 import type WalletConnect from '@walletconnect/client';
 import { ethers } from 'ethers';
+// @ts-ignore
 import WalletConnectProvider from '@walletconnect/web3-provider';
 
 import type { InitOptions } from './types';
