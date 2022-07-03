@@ -23,5 +23,5 @@ type AuthAdapterOptions = Partial<WalletConnectProviderProps>;
 
 export interface AuthServiceProviderProps {
   adapter: AuthAdapterTypes;
-  options: AuthAdapterOptions | undefined;
+  options?: AuthAdapterOptions;
 }

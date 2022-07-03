@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import type { InitOptions } from './types';
+import type { AppOptions, InitOptions } from './types';
 
 import type WeedleApp from './WeedleApp';
 
@@ -9,6 +9,7 @@ interface WeedleProviderProps {
 
 interface WeedleContextProps {
   client: WeedleApp;
+  options?: AppOptions;
 }
 
 const initOptions: WeedleProviderProps = {

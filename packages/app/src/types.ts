@@ -21,3 +21,7 @@ export interface InitOptions {
     };
   };
 }
+
+export interface AppOptions {
+  handleErrors?: boolean;
+}
