@@ -3,6 +3,7 @@ import GlobalErrorHandler from './errors/global-error-handler';
 
 export default class WeedleApp {
   isInitialized = false;
+
   constructor(private readonly _config: InitOptions, options?: AppOptions) {
     if (this.validateAppConfig(_config)) {
       this.isInitialized = true;

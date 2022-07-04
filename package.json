@@ -7,14 +7,11 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "example2",
       "example"
     ],
     "nohoist": [
-      "**/react",
-      "**/react-dom",
-      "**/react-native",
-      "**/react-native/**",
+      "**/ts-jest",
+      "**/ts-jest/**",
       "**/expo",
       "**/expo/**",
       "**/@react-native-async-storage/async-storage",

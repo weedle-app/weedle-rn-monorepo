@@ -15,7 +15,6 @@
     "cpp",
     "rn-core.podspec",
     "!lib/typescript/example",
-    "!lib/typescript/example2",
     "!android/build",
     "!ios/build",
     "!**/__tests__",
@@ -28,8 +27,8 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
-    "example": "yarn --cwd example2",
-    "pods": "cd example2 && pod-install --quiet",
+    "example": "yarn --cwd example",
+    "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
     "watch": "nodemon --watch src --exec yarn prepare",
     "clean": "npx rimraf lib"
@@ -85,7 +84,6 @@
     "preset": "react-native",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
-      "<rootDir>/example2/node_modules",
       "<rootDir>/lib/"
     ]
   },

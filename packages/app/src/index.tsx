@@ -1,5 +1,4 @@
 import WeedleApp from './WeedleApp';
-// import Provider from './module/Providers';
 
 export { default as WeedleProvider } from './WeedleProvider';
 export * from './WeedleProvider';

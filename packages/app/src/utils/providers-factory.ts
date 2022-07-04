@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { ethers } from 'ethers';
-
+// @ts-ignore
 import WalletConnectProvider from '@walletconnect/web3-provider';
 
 export type ChainEnvironmentName = 'mainnet' | 'ropsten' | 'rinkeby' | 'goerli';

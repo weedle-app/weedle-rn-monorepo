@@ -15,7 +15,7 @@ const HandleWalletConnect = ({ rpc }: Props) => {
   const [isConnected, setIsConnected] = useState(false);
   const weedleAuth: Authable = useWalletConnectAuth();
 
-  /* 
+  /*
     const switchNetwork = async () => {
     if (connector) {
       await Provider.switchOrAddNetwork({
