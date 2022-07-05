@@ -1,7 +1,7 @@
 // @ts-ignore
 import { useWalletConnect } from '@walletconnect/react-native-dapp';
 // @ts-ignore
-import { useWeedleApp } from '@weedle/app';
+import { useWeedleApp } from '@weedle-app/app';
 
 import WalletConnectAuth from '../WalletConnect';
 

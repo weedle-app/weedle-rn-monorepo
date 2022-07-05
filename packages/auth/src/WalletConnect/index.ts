@@ -1,7 +1,9 @@
+// @ts-ignore
 import type WalletConnect from '@walletconnect/client';
+// @ts-ignore
 import { ethers } from 'ethers';
-
-import { Provider, InitOptions } from '@weedle/app';
+// @ts-ignore
+import { Provider, InitOptions } from '@weedle-app/app';
 import type { Authable, LoginResponse } from '../types';
 
 const WalletConnectAuth = (
@@ -20,6 +22,7 @@ const WalletConnectAuth = (
       );
 
     const provider = new ethers.providers.Web3Provider(walletConnectProvider);
+
     return provider.getSigner();
   },
 
@@ -38,7 +41,6 @@ const WalletConnectAuth = (
 
       loginResponse.isOnRequestedNetwork = chainId === connectDetails.chainId;
 
-      console.log('current state of connect', walletConnectContext.connected);
       return { ...loginResponse, ...connectDetails };
     }
 

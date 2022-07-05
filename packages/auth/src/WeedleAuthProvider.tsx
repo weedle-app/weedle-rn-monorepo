@@ -34,7 +34,7 @@ const WeedleAuthProvider = (
   props: React.PropsWithChildren<AuthServiceProviderProps>
 ) => {
   if (!props) {
-    throw new Error('Please provide an adapter type you wish to use.');
+    throw new Error('Please provide a valid adapter type you wish to use.');
   }
 
   const renderAuthContainer = () => {
@@ -50,7 +50,7 @@ const WeedleAuthProvider = (
         });
       }
       default: {
-        throw new Error('Please provide an adapter type you wish to use.');
+        throw new Error('Please provide a valid adapter type you wish to use.');
       }
     }
   };

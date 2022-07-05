@@ -1,6 +1,8 @@
 // @ts-ignore
 import { type WalletConnectProviderProps } from '@walletconnect/react-native-dapp';
+// @ts-ignore
 import type WalletConnect from '@walletconnect/client';
+// @ts-ignore
 import type { ethers } from 'ethers';
 
 export interface LoginResponse {
