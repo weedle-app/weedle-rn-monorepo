@@ -1,6 +1,3 @@
-// @ts-ignore
-import React from 'react';
-import { render } from '@testing-library/react-native';
 import WeedleAuthProvider from '../WeedleAuthProvider';
 // @ts-ignore
 import WalletConnectProvider from '@walletconnect/react-native-dapp';
@@ -21,7 +18,7 @@ const authProps = (opts = {}) => ({
 describe('<WeedleAuthProvider />', () => {
   it('should throw error when wrong adapter is provided', () => {
     try {
-      render(<WeedleAuthProvider {...authProps({ adapter: 'someAdapter' })} />);
+      WeedleAuthProvider({ ...authProps({ adapter: 'someAdapter' }) });
     } catch (e: any) {
       expect(e.message).toEqual(
         'Please provide a valid adapter type you wish to use.'
