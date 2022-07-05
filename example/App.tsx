@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import WeedleApp, { WeedleProvider } from '@weedle/app';
-import WeedleAuthProvider, { AuthServiceProviderProps } from '@weedle/auth';
+import WeedleApp, { WeedleProvider } from '@weedle-app/app';
+import WeedleAuthProvider, { AuthServiceProviderProps } from '@weedle-app/auth';
 import HandleWalletConnect from './components/AuthDemo';
 
 const rpc = {

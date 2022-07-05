@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, DeviceEventEmitter } from 'react-native';
 import type WalletConnect from '@walletconnect/client';
-import { useWalletConnectAuth, Authable } from '@weedle/auth';
+import { useWalletConnectAuth, Authable } from '@weedle-app/auth';
 
 interface Props {
   rpc: {

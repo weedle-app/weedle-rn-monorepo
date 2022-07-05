@@ -1,5 +1,5 @@
 {
-  "name": "weedle-monorepos",
+  "name": "weedle-app",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -34,8 +34,8 @@
   },
   "scripts": {
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock && yarn",
-    "android": "yarn workspace @weedle/example android",
-    "build": "yarn workspace @weedle/$npm_config_project prepare"
+    "android": "yarn workspace @weedle-app/example android",
+    "build": "yarn workspace @weedle-app/$npm_config_project prepare"
   },
   "devDependencies": {
     "lerna": "^5.1.4"
