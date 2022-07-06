@@ -18,12 +18,11 @@
 
 The SDK's are split into multiple modules so you can just grab what you need without taking up unecessary space on your users device. The only compulsory package that MUST be installed is the core/app module, which has config and some other utilities that all other packages need.
 
-| Name | Npm Page |
-| ---- | :------: |
-
-| [App](/packages/app) | [![badge](https://img.shields.io/npm/v/@weedle-app/app?style=for-the-badge)](https://www.npmjs.com/package/@weedle-app/app) |
-
+| Name                   | Npm Page                                                                                                                      |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [App](/packages/app)   | [![badge](https://img.shields.io/npm/v/@weedle-app/app?style=for-the-badge)](https://www.npmjs.com/package/@weedle-app/app)   |
 | [Auth](/packages/auth) | [![badge](https://img.shields.io/npm/v/@weedle-app/auth?style=for-the-badge)](https://www.npmjs.com/package/@weedle-app/auth) |
+
 
 ## Contributing
 
