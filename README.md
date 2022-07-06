@@ -24,6 +24,18 @@ The SDK's are split into multiple modules so you can just grab what you need wit
 | [Auth](/packages/auth) | [![badge](https://img.shields.io/npm/v/@weedle-app/auth?style=for-the-badge)](https://www.npmjs.com/package/@weedle-app/auth) |
 
 
+## Quick Start
+
+To use the SDKs, you need to setup a react native app that is web3 compatible. You can grab one here (<a href="https://github.com/weedle-app/weedle-expo-bare-workflow">RN Web3 Starter</a>) or you can set one up yourself.
+
+Once you have the app ready, the next step would be to install the app(core module). There are some required dependencies to make the SDK work properly:
+
+- @walletconnect/web3-provider
+- @walletconnect/react-native-dapp
+- @react-native-async-storage/async-storage
+
+Once you have all that setup, you can proceed to work with the SDK(s) you are interested in.
+
 ## Contributing
 
 Wish to contribute ? Still working on a couple of guidelines, but shoot an email to tech@joinweedle.com or @thefullstackgod on twitter and we'll get you started

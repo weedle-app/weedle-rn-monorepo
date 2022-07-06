@@ -1,6 +1,6 @@
 {
   "name": "@weedle-app/auth",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Auth module part of the weedle SDK's for wallet and other login types",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
