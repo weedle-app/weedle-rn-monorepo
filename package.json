@@ -6,6 +6,8 @@
   "private": true,
   "workspaces": {
     "packages": [
+      "packages/app",
+      "packages/auth",
       "packages/*",
       "example"
     ],
@@ -35,7 +37,8 @@
   "scripts": {
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock && yarn",
     "android": "yarn workspace @weedle-app/example android",
-    "build": "yarn workspace @weedle-app/$npm_config_project prepare"
+    "build": "yarn workspace @weedle-app/app prepare && yarn workspace @weedle-app/auth prepare",
+    "test": "yarn jest --coverage"
   },
   "devDependencies": {
     "lerna": "^5.1.4"

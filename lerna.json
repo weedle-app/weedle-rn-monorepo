@@ -1,7 +1,18 @@
 {
   "packages": ["packages/*"],
+  "npmClientArgs": ["--no-lockfile"],
   "useWorkspaces": true,
   "version": "independent",
   "npmClient": "yarn",
-  "ignoreChanges": ["**/docs/**", "**/.github/**","**/tests/**"]
+  "ignoreChanges": ["**/docs/**", "**/.github/**", "**/tests/**"],
+  "command": {
+    "version": {
+      "ignoreChanges": ["*.md"],
+      "npmClient": "yarn",
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "npmClient": "yarn"
+    }
+  }
 }

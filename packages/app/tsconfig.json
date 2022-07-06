@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "rn-core": ["./src/index"]
+      "@weedle-app": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

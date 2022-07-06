@@ -35,4 +35,5 @@ jobs:
           node-version: '16'
           cache: yarn
       - run: yarn
+      - run: yarn build
       - run: lerna run test

@@ -1,7 +1,6 @@
 import { _nameprepTableC } from '@ethersproject/strings/lib/idna';
 import WalletConnect from '@walletconnect/client';
 import * as ethers from 'ethers';
-// @ts-ignore
 import * as WeedleApp from '@weedle-app/app';
 
 import type { Authable } from '../../types';

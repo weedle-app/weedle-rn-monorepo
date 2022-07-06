@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./packages",
+    "paths": {
+      "@weedle-app/app/*": ["app/src/*"],
+      "@weedle-app/auth/*": ["auth/src/*"]
+    }
+  }
+}
