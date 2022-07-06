@@ -7,7 +7,7 @@
   "ignoreChanges": ["**/docs/**", "**/.github/**", "**/tests/**"],
   "command": {
     "version": {
-      "ignoreChanges": ["*.md"],
+      "ignoreChanges": ["*.md", "example/*"],
       "npmClient": "yarn",
       "message": "chore(release): publish"
     },
