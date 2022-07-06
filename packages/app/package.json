@@ -30,7 +30,8 @@
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
-    "watch": "nodemon --watch src --exec yarn prepare"
+    "watch": "nodemon --watch src --exec yarn prepare",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "react-native",

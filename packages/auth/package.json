@@ -31,7 +31,8 @@
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods",
     "watch": "nodemon --watch src --exec yarn prepare",
-    "clean": "npx rimraf lib"
+    "clean": "npx rimraf lib",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "react-native",
