@@ -27,9 +27,6 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods",
     "watch": "nodemon --watch src --exec yarn prepare",
     "clean": "npx rimraf lib",
     "publish": "npm publish --access public"
