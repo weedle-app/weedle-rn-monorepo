@@ -39,5 +39,5 @@ jobs:
       - run: ls -l ./scripts/build.sh
       - name: Run script file
         run: |
-          sh ./scripts/build.sh
+          bash ./scripts/build.sh
       - run: lerna run test
