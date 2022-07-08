@@ -35,5 +35,10 @@ jobs:
           node-version: '16'
           cache: yarn
       - run: yarn
-      - run: chmod +x ./scripts/build.sh
+      - run: pwd
+      - name: Run script file
+        run: |
+          chmod +x ./scripts/build.sh
+          ./scripts/build.sh
+        shell: bash
       - run: lerna run test
