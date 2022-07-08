@@ -1,5 +1,4 @@
-#!/bin/zsh
-eval pwd
+#!/bin/bash
 
 scripts=(
   '@weedle-app/app prepare'
