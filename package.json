@@ -35,7 +35,7 @@
   "scripts": {
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock && yarn",
     "android": "yarn workspace @weedle-app/example android",
-    "build": "yarn workspace @weedle-app/app prepare && yarn workspace @weedle-app/auth prepare",
+    "build": "./scripts/build.sh",
     "test": "lerna run test"
   },
   "devDependencies": {

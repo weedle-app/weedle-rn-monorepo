@@ -1,7 +1,7 @@
 {
   "name": "@weedle-app/auth",
   "version": "0.2.0",
-  "description": "Auth module part of the weedle SDK's for wallet and other login types",
+  "description": "Auth module for weedle SDK's. Implements wallet login and other login types",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/weedle-app/rn-core",
+  "repository": "https://github.com/weedle-app/weedle-rn-monorepo",
   "author": "Weedle <tech@joinweedle.com> (https://github.com/weedle-app)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weedle-app/rn-core/issues"
+    "url": "https://github.com/weedle-app/weedle-rn-monorepo/issues"
   },
-  "homepage": "https://github.com/weedle-app/rn-core#readme",
+  "homepage": "https://github.com/weedle-app/weedle-rn-monorepo/tree/main/packages/auth#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

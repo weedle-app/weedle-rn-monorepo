@@ -4,7 +4,8 @@
     "baseUrl": "./packages",
     "paths": {
       "@weedle-app/app/*": ["app/src/*"],
-      "@weedle-app/auth/*": ["auth/src/*"]
+      "@weedle-app/auth/*": ["auth/src/*"],
+      "@weedle-app/native/*": ["native/src/*"]
     }
   }
 }

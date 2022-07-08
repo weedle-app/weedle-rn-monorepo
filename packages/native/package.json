@@ -1,7 +1,7 @@
 {
-  "name": "@weedle-app/app",
-  "version": "0.2.0",
-  "description": "Core module/provider for using weedle web3 sdks",
+  "name": "@weedle-app/native",
+  "version": "0.1.0",
+  "description": "Native module for working with the blockchain and contracts",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
@@ -41,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/weedle-app/weedle-rn-monorepo/issues"
   },
-  "homepage": "https://github.com/weedle-app/weedle-rn-monorepo/tree/main/packages/app#readme",
+  "homepage": "https://github.com/weedle-app/weedle-rn-monorepo/tree/main/packages/native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
