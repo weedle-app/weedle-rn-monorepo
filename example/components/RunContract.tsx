@@ -27,6 +27,7 @@ const RunContract = () => {
     */
     console.log({ contractAdd, a: ethers.utils.parseEther('2.0') });
     const abi = ['function uri(uint256) public view virtual override returns (string memory)'];
+    // const abi = ['function uri(uint256) public view returns (string memory)'];
 
     const options = {
       contractAddress: '0x4a4a91CA235c348c11d6912d11B1E1CD951351A3',
@@ -35,6 +36,10 @@ const RunContract = () => {
       functionName: 'uri',
       params: [ethers.utils.parseEther('3.0')],
     };
+
+    /* -- get function args
+     functionName: 'uri',
+      params: [`1`], */
 
     try {
       const res = await (await runContractFunction(options)).wait();
