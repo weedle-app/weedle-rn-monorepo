@@ -4,9 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import WeedleApp, { WeedleProvider } from '@weedle-app/app';
 import WeedleAuthProvider, { AuthServiceProviderProps } from '@weedle-app/auth';
 import HandleWalletConnect from './components/AuthDemo';
+import RunContract from './components/RunContract';
 
 const rpc = {
-  url: 'https://f67f-50-66-132-160.ngrok.io/',
+  url: 'http://localhost:8545',
   chainId: 1337,
 };
 
@@ -29,9 +30,12 @@ export default function App() {
     <View style={styles.container}>
       <WeedleProvider client={client}>
         <WeedleAuthProvider {...authProps}>
-          <HandleWalletConnect rpc={rpc} />
-          <Text>Open up App.js to start working on your app!</Text>
-          <StatusBar style='auto' />
+          <View>
+            <HandleWalletConnect rpc={rpc} />
+            <RunContract />
+            <Text>Open up App.js to start working on your app!</Text>
+            <StatusBar style='auto' />
+          </View>
         </WeedleAuthProvider>
       </WeedleProvider>
     </View>

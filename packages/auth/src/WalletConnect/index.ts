@@ -14,6 +14,15 @@ const WalletConnectAuth = (
     return walletConnectContext;
   },
 
+  async getCurrentProvider(): Promise<ethers.providers.JsonRpcProvider> {
+    const provider = await Provider.resolveWalletConnectProviderFromConfig(
+      config,
+      walletConnectContext
+    );
+
+    return new ethers.providers.Web3Provider(provider);
+  },
+
   async getWalletSigner() {
     const walletConnectProvider =
       await Provider.resolveWalletConnectProviderFromConfig(

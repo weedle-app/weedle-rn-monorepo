@@ -29,7 +29,8 @@
       "**/react-native-svg",
       "**/react-native-svg/**",
       "**/node-libs-react-native",
-      "**/node-libs-react-native/**"
+      "**/node-libs-react-native/**",
+      "**/*/**"
     ]
   },
   "scripts": {

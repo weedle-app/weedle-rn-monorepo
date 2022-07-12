@@ -16,6 +16,7 @@ export interface LoginResponse {
 export interface Authable {
   getSession: () => WalletConnect;
   getWalletSigner: () => Promise<ethers.providers.JsonRpcSigner>;
+  getCurrentProvider: () => Promise<ethers.providers.JsonRpcProvider>;
   login: () => Promise<LoginResponse>;
   logout: () => Promise<void>;
 }
